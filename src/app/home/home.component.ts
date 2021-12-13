@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { postsMock } from '../data/posts.mock';
+// import { postsMock } from '../data/posts.mock';
 import { Post } from '../models/post.interface';
 import { GetDataService } from '../services/get-data.service';
 
