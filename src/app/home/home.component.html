@@ -64,10 +64,11 @@
   <h2>BEST DAD jokes</h2>
   <p>They are so BAD an so FUNNY!</p>
 
-  <div class="card-container">
+  <p *ngIf="isLoading">Les données sont en cours de chargement, veuillez patienter...</p>
+  <div class="card-container" *ngIf="!isLoading">
     <a
       *ngFor="let post of posts"
-      [routerLink]="['/post', post.id]"
+      [routerLink]="['/post', post.slug]"
       class="card"
     >
       <span>{{ post.title }}</span>
